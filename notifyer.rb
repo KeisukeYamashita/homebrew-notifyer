@@ -4,13 +4,14 @@
 class Notifyer < Formula
   desc "Notification util written in golang"
   homepage ""
-  url "https://github.com/KeisukeYamashita/notifyer/archive/0.1.3.tar.gz"
-  sha256 "7e60750cf2e2cec91195c425ee6eef43f81d9008dd6b531f0fa1282eda813ef5"
+  url "https://github.com/KeisukeYamashita/notifyer/archive/0.1.4.tar.gz"
+  sha256 "9c6b30ef74d04faa35ddffb68483376a2a04a1d746d641bf728408b851c53f74"
 
-  # depends_on "cmake" => :build
+  depends_on "go" => :build
 
   def install
     system "make", "install" # if this fails, try separate make/make install steps
+    bin.install "bin/notifyer"
   end
 
   test do
