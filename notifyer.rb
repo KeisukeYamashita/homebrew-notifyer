@@ -4,8 +4,8 @@
 class Notifyer < Formula
   desc "Notification util written in golang"
   homepage ""
-  url "https://github.com/KeisukeYamashita/notifyer/archive/0.1.2.tar.gz"
-  sha256 "c1f09c8facb1dd0971b77f0d3b61b75fd270c24c4279974c5a31219c3181d837"
+  url "https://github.com/KeisukeYamashita/notifyer/archive/0.1.3.tar.gz"
+  sha256 "7e60750cf2e2cec91195c425ee6eef43f81d9008dd6b531f0fa1282eda813ef5"
 
   depends_on "go" => :build
 
