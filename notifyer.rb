@@ -7,7 +7,7 @@ class Notifyer < Formula
   url "https://github.com/KeisukeYamashita/notifyer/archive/0.1.3.tar.gz"
   sha256 "7e60750cf2e2cec91195c425ee6eef43f81d9008dd6b531f0fa1282eda813ef5"
 
-  depends_on "go" => :build
+  # depends_on "cmake" => :build
 
   def install
     system "make", "install" # if this fails, try separate make/make install steps
